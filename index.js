@@ -19,7 +19,7 @@ const onSearchUser = () => {
   fetchUserData(userName)
     .then((userData) => {
       renderUserData(userData);
-      return userData.repos_URL;
+      return userData.repos_url;
     })
     .then((url) => fetchRepositories(url))
     .then((reposList) => {
